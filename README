@@ -1,0 +1,9 @@
+#Requires YNAB personal API key. Instructions for obtaining personal key found here https://api.ynab.com/#personal-access-tokens 
+#PACKAGE CONTAINS THREE FILES
+##MONTHLY BALANCES -- Ynab does not provide historical balances, this script will use the start/end balances and create a rolling sum of transactions to interpret a monthly end balance
+##MONTHLY REVIEW -- This script summarizes transactions by month based on their account type to help identify income, expense, net cash flow, total debt change, and a subtotal just for restaurant/dining purchases (personal goal).  Monthly balances must be run first.
+##ANUAL ANALYSIS -- Using the transactions file and account classifications, summarize balances by year and develop a few key financial ratios to track (i.e. Debt Ratio, Liquidity, Retirement Saving % of Income, etc.). Monthly balances must be run first.
+
+#SETUP
+#Create an env variable for YNAB_API_KEY = [Insert your api key]
+#Update budget_id to the relevant budget you are targeting (in MonthlyBalances.py)
